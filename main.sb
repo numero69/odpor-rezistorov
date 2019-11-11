@@ -1,0 +1,13 @@
+TextWindow.WriteLine("zadaj odpor 2 rezistorov")
+cislo1=TextWindow.ReadNumber()
+cislo2=TextWindow.ReadNumber()
+TextWindow.WriteLine("ako ich chces zapojit? (p / s)")
+odpoved=TextWindow.Read()
+If odpoved = "s" Then
+  sucet= cislo1 + cislo2
+  TextWindow.WriteLine(sucet)
+Else
+  sucet = (1/cislo1 + 1/cislo2)
+  odpor = 1/sucet
+  TextWindow.WriteLine(odpor)
+  EndIf
