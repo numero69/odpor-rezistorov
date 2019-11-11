@@ -1,3 +1,4 @@
+start:
 TextWindow.WriteLine("zadaj odpor 2 rezistorov")
 cislo1=TextWindow.ReadNumber()
 cislo2=TextWindow.ReadNumber()
@@ -11,3 +12,7 @@ Else
   odpor = 1/sucet
   TextWindow.WriteLine(odpor)
   EndIf
+TextWindow.WriteLine("----------------")
+TextWindow.WriteLine("znova")
+TextWindow.WriteLine("----------------")
+Goto start
